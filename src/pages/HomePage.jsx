@@ -5,7 +5,7 @@ import RightSidebar from '../components/RightSidebar'
 import { ChatContext } from '../../context/ChatContext'
 
 const HomePage = () => {
-   const {selectedUser} = useContext(ChatContext)
+   const {selectedUser, setSelectedUser} = useContext(ChatContext)
 
   return (
     <div className='border w-full h-screen sm:px-[15%] sm:py-[5%]'>
@@ -18,4 +18,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default HomePage;
